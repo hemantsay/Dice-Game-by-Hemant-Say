@@ -10,13 +10,14 @@ const resultelement = document.querySelector(".result");
 
 
 
-if(x>y){
-    resultelement.textContent="Player 1 is Winner!"
+if (x === y) {
+    resultelement.textContent = "Draw!";
+} else if (x > y) {
+    resultelement.textContent = "Player 1 is Winner!";
+} else {
+    resultelement.textContent = "Player 2 is Winner!";
+}
 
-}
-else{
-    resultelement.textContent="Player 2 is Winner!"
-}
 
 resultelement.style.fontFamily = "Honk";
 resultelement.style.fontSize = "50px";
