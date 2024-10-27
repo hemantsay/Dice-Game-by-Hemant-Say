@@ -1,0 +1,87 @@
+body {
+    background: rgb(255,179,142);
+    background: linear-gradient(180deg, rgba(255,179,142,1) 0%, rgba(246,245,242,1) 10%, rgba(246,245,241,1) 18%, rgba(247,240,234,1) 84%, rgba(249,222,207,1) 100%, rgba(255,179,142,1) 100%);
+
+}
+
+.hhead{
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+ 
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 7rem;
+    padding-top: 50PX;
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+
+  
+  
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+    
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    width: 100%;
+    padding-bottom: 120px;
+
+
+}
+
+.playerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+/* Styles for tablet (medium screens) */
+@media (max-width: 768px) {
+    .player {
+        gap: 15px;
+        /* Reduce the gap slightly on smaller screens */
+    }
+
+    .dice-image {
+        width: 25px;
+        height: 25px;
+        /* Reduce dice image size for better fit */
+    }
+}
+
+/* Styles for mobile (small screens) */
+@media (max-width: 480px) {
+    .player {
+        flex-direction: column;
+        /* Stack players vertically */
+        gap: 10px;
+        /* Reduce gap further on mobile */
+    }
+
+    .dice-image {
+        width: 20px;
+        height: 20px;
+        /* Smaller dice image */
+    }
+}
